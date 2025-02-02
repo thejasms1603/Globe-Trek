@@ -1,6 +1,6 @@
 import { NAV_LINKS } from "@/constants";
-import Image from "next/image"
-import Link from "next/link"
+import Image from "next/image";
+import Link from "next/link";
 import Button from "./Button";
 
 const Navbar = () => {
@@ -20,7 +20,7 @@ const Navbar = () => {
           </Link>
         ))}
       </ul>
-      <div className='lg:flexCenter' hidden>
+      <div className='lg:flexCenter hidden'>
         <Button
           type='button'
           title='Click me'
@@ -28,9 +28,15 @@ const Navbar = () => {
           variant='btn_dark_green'
         />
       </div>
-      <Image src="menu.svg" alt="menu" width={32} height={32} className="lg:hidden inline-block cursor-pointer" />
+      <Image
+        src='menu.svg'
+        alt='menu'
+        width={32}
+        height={32}
+        className='lg:hidden inline-block cursor-pointer'
+      />
     </nav>
   );
-}
+};
 
-export default Navbar
+export default Navbar;
